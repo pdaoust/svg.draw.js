@@ -1,4 +1,4 @@
-    SVG.Element.prototype.draw.extend('rect image', {
+    SVG.Element.prototype.edit.extend('rect image', {
     
         init:function(e){
 
@@ -20,7 +20,7 @@
             // Snap the params to the grid we specified
             this.snapToGrid(rect);
 
-            // When width is less than zero, we have to draw to the left
+            // When width is less than zero, we have to edit to the left
             // which means we have to move the start-point to the left
             if (rect.width < 0) {
                 rect.x = rect.x + rect.width;
@@ -33,7 +33,7 @@
                 rect.height = -rect.height;
             }
 
-            // draw the element
+            // edit the element
             this.el.attr(rect);
         }
     

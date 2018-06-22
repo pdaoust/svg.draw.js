@@ -1,34 +1,34 @@
 {
-  "name": "svg.draw.js",
+  "name": "svg.edit.js",
   "version": "2.0.3",
-  "description": "An extension for svg.js which allows to draw elements with mouse",
+  "description": "An extension for svg.js which allows to edit elements with mouse",
   "keywords": [
     "svg.js",
-    "draw",
+    "edit",
     "mouse"
   ],
-  "bugs": "https://github.com/svgdotjs/svg.draw.js/issues",
+  "bugs": "https://github.com/pdaoust/svg.edit.js/issues",
   "license": "MIT",
   "author": {
-    "name": "Ulrich-Matthias Schäfer"
+    "name": "Paul d'Aoust"
   },
   "contributors": {
-    "name": "Ulrich-Matthias Schäfer"
+    "name": "Paul d'Aoust"
   },
-  "homepage": "https://github.com/svgdotjs/svg.draw.js",
-  "main": "dist/svg.draw.js",
+  "homepage": "https://github.com/pdaoust/svg.edit.js",
+  "main": "dist/svg.edit.js",
   "files": [
     "dist/"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/svgdotjs/svg.draw.js.git"
+    "url": "https://github.com/pdaoust/svg.edit.js.git"
   },
   "engines": {
     "node": ">= 0.8.0"
   },
   "devDependencies": {
-    "grunt": "~0.4.5",
+    "grunt": "^0.4.5",
     "grunt-bumper": "^1.0.4",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-contrib-concat": "~0.3.0",

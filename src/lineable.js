@@ -1,7 +1,7 @@
-    SVG.Element.prototype.draw.extend('line polyline polygon', {
+    SVG.Element.prototype.edit.extend('line polyline polygon', {
 
         init:function(e){
-            // When we draw a polygon, we immediately need 2 points.
+            // When we edit a polygon, we immediately need 2 points.
             // One start-point and one point at the mouse-position
 
             this.set = new SVG.Set();
@@ -14,9 +14,9 @@
 
             this.el.plot(arr);
 
-            // We draw little circles around each point
+            // We edit little circles around each point
             // This is absolutely not needed and maybe removed in a later release
-            this.drawCircles();
+            this.editCircles();
 
         },
 
@@ -45,10 +45,10 @@
                 arr.push(this.snapToGrid([p.x, p.y]));
 
                 this.el.plot(arr);
-                this.drawCircles();
+                this.editCircles();
 
-                // Fire the `drawpoint`-event, which holds the coords of the new Point
-                this.el.fire('drawpoint', {event:e, p:{x:p.x, y:p.y}, m:this.m});
+                // Fire the `editpoint`-event, which holds the coords of the new Point
+                this.el.fire('editpoint', {event:e, p:{x:p.x, y:p.y}, m:this.m});
 
                 return;
             }
@@ -71,7 +71,7 @@
 
         },
 
-        drawCircles:function () {
+        editCircles:function () {
             var array = this.el.array().valueOf()
 
             this.set.each(function () {

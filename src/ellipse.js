@@ -1,4 +1,4 @@
-    SVG.Element.prototype.draw.extend('ellipse', {
+    SVG.Element.prototype.edit.extend('ellipse', {
     
         init:function(e){
             // We start with a circle with radius 1 at the position of the cursor

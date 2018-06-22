@@ -1,4 +1,4 @@
-    SVG.Element.prototype.draw.extend('circle', {
+    SVG.Element.prototype.edit.extend('circle', {
     
         init:function(e){
         

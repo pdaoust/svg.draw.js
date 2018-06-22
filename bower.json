@@ -1,17 +1,17 @@
 {
-  "name": "svg.draw.js",
+  "name": "svg.edit.js",
   "version": "2.0.3",
-  "homepage": "https://github.com/svgdotjs/svg.draw.js",
+  "homepage": "https://github.com/pdaoust/svg.edit.js",
   "authors": [
     "Ulrich-Matthias Schäfer"
   ],
-  "description": "An extension for svn.js which allows to draw elements with mouse",
+  "description": "An extension for svg.js which allows to edit elements with mouse",
   "main": [
-    "./dist/svg.draw.js"
+    "./dist/svg.edit.js"
   ],
   "keywords": [
     "svg.js",
-    "draw",
+    "edit",
     "mouse"
   ],
   "license": "MIT",

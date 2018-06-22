@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         footer:'\n}).call(this);'
       },
       dist: {
-        src: ['src/svg.draw.js', 'src/rectable.js', 'src/lineable.js', 'src/circle.js', 'src/ellipse.js'],
+        src: ['src/svg.edit.js', 'src/rectable.js', 'src/lineable.js', 'src/circle.js', 'src/ellipse.js'],
         dest: 'dist/<%= fileName %>.js'
       },
     },
